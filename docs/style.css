@@ -1,0 +1,228 @@
+/*General*/
+a {
+  color:#3066BE;
+  position:relative;
+  transition:color .3s ease-in-out;
+  text-decoration:none;
+}
+
+a:hover {
+  color:#FF5376;
+  transition:color .3s ease-in-out;
+}
+
+a::before {
+  content:'';
+  position:absolute;
+  width:100%;
+  height:10%;
+  border-radius:100%;
+  background-color:#FF5376;
+  bottom:0;
+  left:0;
+  transform-origin:right;
+  transform:scaleX(0);
+  transition:transform .3s ease-in-out;
+}
+
+a:hover::before {
+  color:#FF5376;
+  cursor:pointer;
+  text-decoration:none;
+  transform-origin:left;
+  transform:scaleX(1.0);
+}
+
+ul {
+	list-style-type:none;
+}
+
+li.bottom a {
+	color:#FF5376;
+	float:right;
+	margin-bottom:10px;
+}
+
+nav {
+	font-family:Quicksand;
+	background:#0A1128;
+	background:linear-gradient(150deg, rgba(10, 17, 40, 1) 0%, rgba(0, 31, 84, 1) 50%, rgba(3, 64, 120, 1) 100%);;
+	top:0;
+	position:sticky;
+	margin-left:-30px;
+	margin-top:-20px;
+	float:none;
+	display:inline-block;
+	width:100%;
+	padding-right:38px;
+}
+
+html.index {
+	background:#0A1128;
+	background:linear-gradient(150deg,rgba(10, 17, 40, 1) 0%, rgba(0, 31, 84, 1) 50%, rgba(3, 64, 120, 1) 100%);
+	color:white;
+	background-attachment:fixed;
+}
+
+input {
+	font-family:Quicksand;
+	font-size:4vmin;
+	color:#BEBBBB;
+	background-color:#0E1116;
+	font-size:25px;
+	margin-bottom:20px;
+	position:relative;
+	height:50px;
+	transition:.2s ease-in-out;
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+	max-width:auto;
+	min-width:50%;
+	border:3px solid;
+  	border-radius:20px;
+}
+
+input:hover {
+	color:white;
+	transition:.2s ease-in-out;
+  	cursor:pointer;
+}
+
+h1 {
+	font-family:Alumni Sans Pinstripe;
+	font-size:8vmin;
+	text-align:center;
+	margin-bottom:-20px;
+	text-decoration:underline;
+}
+
+h2 {
+	font-family:Alumni Sans Pinstripe;
+	font-size:5vmin;
+	font-style:italic;
+	text-align:center;
+}
+
+h3 {
+	font-family:Alumni Sans Pinstripe;
+	font-size:5vmin;
+	text-align:center;
+}
+
+section {
+	font-family:Quicksand;
+	font-size:4vmin;
+	margin-left:20%;
+	margin-right:20%;
+}
+
+footer {
+	font-family:Quicksand;
+	float:right;
+	text-align:right;
+	font-size:3vmin;
+	padding-right:10px;
+}
+
+/*A Space Ranger's Rodeo*/
+html.space {
+	background-color:black;
+	background-image:
+	radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+	radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+	radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+	radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+	background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+	background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+	color:white;
+	background-attachment:fixed;
+}
+
+h1.space {
+	font-family:Electrolize;
+}
+
+h2.space {
+	font-family:Electrolize;
+}
+
+nav.space {
+	font-family:Quantico;
+}
+
+article.space {
+	font-family:Quantico;
+	font-size:4vmin;
+	margin-left:20%;
+	margin-right:20%;
+}
+
+input.space {
+	font-family:Electrolize;
+	color:#0C0F0A;
+	font-size:4vmin;
+	background-color:#1F8470;
+}
+
+input.space:hover {
+	color:#C5D4E7;
+  	transition:.2s ease-in-out;
+  	cursor:pointer;
+}
+
+footer.space {
+	font-family:Electrolize;
+}
+
+/*The Carwash Caper*/
+
+body.carwash {
+	position:absolute;
+	background-image:url(img/tima-carwash1.jpg);
+	backdrop-filter:blur(20px) brightness(40%);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+	background-attachment:fixed;
+}
+
+h1.carwash {
+	color:floralwhite;
+	font-family:Libre Bodoni;
+}
+
+h2.carwash {
+	color:floralwhite;
+	font-family:Libre Bodoni;
+}
+
+nav.carwash {
+	font-family:Playfair;
+}
+
+article.carwash {
+	font-family:Playfair;
+	color:floralwhite;
+	font-size:4vmin;
+	margin-left:20%;
+	margin-right:20%;
+}
+
+input.carwash {
+	font-family:Libre Bodoni;
+	color:#0C0F0A;
+	font-size:4vmin;
+	background-color:#424874;
+}
+
+input.carwash:hover {
+	color:floralwhite;
+  	transition:.2s ease-in-out;
+  	cursor:pointer;
+}
+
+footer.carwash {
+	font-family:Playfair;
+	color:floralwhite;
+}
